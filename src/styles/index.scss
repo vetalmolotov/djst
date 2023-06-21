@@ -9,8 +9,8 @@
 @import 'scaffolding';
 
 //main
-@import "header";
-@import "popular";
+@import "sections/header";
+@import "sections/popular";
 
 //components
-@import "exercise";
+@import "components/exercise";
