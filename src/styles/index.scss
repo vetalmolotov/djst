@@ -1,7 +1,8 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+  font-family: 'Poppins', sans-serif;
 }
+
+@import "reset.css";
 
 @import 'variables';
 @import 'scaffolding';
