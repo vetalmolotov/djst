@@ -1,0 +1,35 @@
+.workout-header {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 22px;
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    @include flex-v;
+    height: 22px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  &__nav {
+    @include flex-v;
+    justify-content: space-between;
+    height: 22px;
+    width: 100%;
+    max-width: 386px;
+  }
+  &__link {
+    @include flex-v;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    height: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

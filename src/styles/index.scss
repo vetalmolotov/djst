@@ -7,3 +7,10 @@
 @import 'variables';
 @import "mixins";
 @import 'scaffolding';
+
+//main
+@import "header";
+@import "popular";
+
+//components
+@import "exercise";

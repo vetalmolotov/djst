@@ -14,11 +14,12 @@ $mobile-max-width: 900px;
 
 @mixin flex-h {
   display: flex;
-  align-items: center;
+  justify-content: center;
+
 }
 @mixin flex-v {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 @mixin flex-vh {
   display: flex;

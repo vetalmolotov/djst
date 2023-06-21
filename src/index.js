@@ -2,7 +2,7 @@
 import { example } from '@/js/example'
 import bootstrap from 'bootstrap'
 
-import {iconArrowSVG} from './js/icon-arrow'
+// import {iconArrowSVG} from './js/icon-arrow'
 
 import '@/styles/index.scss'
 
