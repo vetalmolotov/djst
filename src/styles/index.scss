@@ -8,9 +8,11 @@
 @import "mixins";
 @import 'scaffolding';
 
-//main
+// sections
 @import "sections/header";
 @import "sections/popular";
+@import "sections/types";
 
-//components
+// components
 @import "components/exercise";
+@import "components/type";

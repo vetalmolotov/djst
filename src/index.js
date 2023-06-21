@@ -2,10 +2,14 @@
 import { example } from '@/js/example'
 import bootstrap from 'bootstrap'
 
-// import {iconArrowSVG} from './js/icon-arrow'
+import {iconArrowSVG} from './js/icon-arrow'
 
 import '@/styles/index.scss'
 
+const iconArrow = document.querySelectorAll('.icon-arrow')
+for (let i = 0; i < iconArrow.length; ++i) {
+  iconArrow[i].innerHTML = iconArrowSVG()
+}
 // Test import of an asset
 // import webpackLogo from '@/images/webpack-logo.svg'
 
