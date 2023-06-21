@@ -1,0 +1,41 @@
+$desktop-min-width: 1024px;
+$mobile-max-width: 900px;
+
+@mixin tablet {
+  @media screen and (max-width: #{$desktop-min-width}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-max-width}) {
+    @content;
+  }
+}
+
+@mixin flex-h {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-v {
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-vh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin btn {
+  @include flex-vh;
+  padding: 0 43px;
+  min-height: 70px;
+  border-radius: 10px;
+  color: $font-color;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}

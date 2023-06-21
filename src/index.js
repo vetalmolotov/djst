@@ -2,11 +2,12 @@
 import { example } from '@/js/example'
 import bootstrap from 'bootstrap'
 
+import {iconArrowSVG} from './js/icon-arrow'
+
+import '@/styles/index.scss'
+
 // Test import of an asset
 // import webpackLogo from '@/images/webpack-logo.svg'
-
-// Test import of styles
-import '@/styles/index.scss'
 
 // Appending to the DOM
 // const logo = document.createElement('img')
