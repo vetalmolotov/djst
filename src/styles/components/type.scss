@@ -12,6 +12,9 @@
     .type-info {
       margin: 0 0 0 300px;
     }
+    .type-info__counter {
+      opacity: 1;
+    }
   }
   &-number {
     font-style: normal;
@@ -43,6 +46,7 @@
       line-height: 23px;
       letter-spacing: 0.5px;
       opacity: 0.5;
+      transition: opacity 500ms;
     }
   }
   .icon-arrow {

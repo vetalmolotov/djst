@@ -4,7 +4,7 @@ import bootstrap from 'bootstrap'
 
 import {iconArrowSVG} from './js/icon-arrow'
 
-import '@/styles/index.scss'
+import '@/styles/index.scss' // this is not my idea
 
 const iconArrow = document.querySelectorAll('.icon-arrow')
 for (let i = 0; i < iconArrow.length; ++i) {
