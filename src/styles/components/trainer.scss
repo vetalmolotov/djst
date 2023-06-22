@@ -1,10 +1,16 @@
 .trainer {
   position: relative;
   width: 321px;
+  &:hover {
+    .trainer__photo {
+      transform: scale(1.1);
+    }
+  }
   &__photo {
     display: block;
     width: 100%;
     margin-bottom: 20px;
+    transition: transform $animation-speed;
   }
   &__name {
     color: $font-color;
