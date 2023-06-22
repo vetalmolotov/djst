@@ -2,11 +2,15 @@
   @include flex-v;
   flex-direction: column;
   position: relative;
-  width: calc(100% + 64px);
-  //max-width: 1200px;
+  width: calc(100% + 32px);
   padding: 100px 0 0;
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,0.1) 25%);
+  @include tablet {
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    padding: 32px 0 0 0;
+  }
   &-bg1 {
     position: absolute;
     top: -100px;
@@ -15,12 +19,21 @@
     height: 733px;
     background: $bg-body;
     z-index: 2;
+    @media screen and (max-width: 1264px) {
+      left: 0;
+    }
+    @include tablet {
+      display: none;
+    }
   }
   &-bg2 {
     @include flex-h;
     width: 100%;
     background: $bg-body;
     padding-bottom: 150px;
+    @include tablet {
+      padding-bottom: 64px;
+    }
   }
   &-info {
     position: relative;
@@ -28,18 +41,28 @@
     max-width: 1264px;
     padding: 0 32px;
     display: flex;
-    column-gap: 119px;
+    justify-content: space-between;
     margin-bottom: 153px;
     z-index: 4;
+    @include tablet {
+      flex-direction: column;
+      margin-bottom: 64px;
+    }
     &__title {
       position: relative;
-      width: 523px;
+      width: 100%;
+      max-width: 523px;
       color: $font-color;
       font-size: 120px;
       font-weight: 600;
       line-height: 120px;
       letter-spacing: -2px;
       z-index: 4;
+      @include tablet {
+        font-size: 640px;
+        line-height: 64px;
+        max-width: 100%;
+      }
     }
     &__img {
       position: absolute;
@@ -47,9 +70,18 @@
       left: -21px;
       width: 504px;
       z-index: 3;
+      @include tablet {
+        display: none;
+      }
     }
     &__desc {
-      width: 558px;
+      width: 100%;
+      max-width: 558px;
+      margin-left: 16px;
+      @include tablet {
+        margin-left: 0;
+        max-width: 100%;
+      }
       p {
         color: #FFF;
         font-size: 25px;
@@ -71,15 +103,38 @@
     position: relative;
     display: flex;
     z-index: 4;
-    .trainer:nth-child(2) {
-      margin-top: 321px;
+    @media screen and (max-width: 1264px) {
+      max-width: 1200px;
+      padding: 0;
     }
-    .trainer:nth-child(3) {
-      width: 558px;
-      top: -193px;
-      .trainer__name,
-      .trainer__title {
-        margin-left: 20px;
+
+    .trainer {
+      @include tablet {
+        width: calc(100% / 3);
+      }
+      &:nth-child(2) {
+        margin-top: 321px;
+        @include tablet {
+          margin-top: 0;
+        }
+      }
+      &:nth-child(3) {
+        width: 558px;
+        top: -193px;
+        @include tablet {
+          width: calc(100% / 3);
+          top: 0;
+          img {
+            height: calc(100% - 64px);
+          }
+        }
+        .trainer__name,
+        .trainer__title {
+          margin-left: 20px;
+          @include tablet {
+            margin-left: 0;
+          }
+        }
       }
     }
   }

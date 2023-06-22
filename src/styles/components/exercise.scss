@@ -55,10 +55,13 @@
       font-size: 20px;
       line-height: 19px;
       letter-spacing: 1.36667px;
-      background: #000;
+      background: $bg-body;
       padding: 10px 0 10px 10px;
       border-top-left-radius: 16px;
       border-bottom-left-radius: 16px;
+      @media screen and (max-width: 1264px) {
+        top: -42px;
+      }
     }
   }
 }

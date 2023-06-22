@@ -4,6 +4,10 @@
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(255,255,255, 0.4);
   transition: border-bottom $animation-speed;
+  @include tablet {
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
   &:hover {
     border-bottom: 1px solid rgba(255,255,255, 1);
     .type-number {
@@ -17,6 +21,7 @@
     }
   }
   &-number {
+    width: 33px;
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -30,6 +35,9 @@
     flex-direction: column;
     margin: 0 0 0 290px;
     transition: margin $animation-speed;
+    @include tablet {
+      margin: 0 0 0 0;
+    }
     &__title {
       @include flex-v;
       height: 70px;
@@ -38,6 +46,9 @@
       font-size: 50px;
       letter-spacing: 0.833333px;
       margin-bottom: 10px;
+      @include tablet {
+        font-size: 32px;
+      }
     }
     &__counter {
       font-style: normal;
@@ -54,6 +65,9 @@
     height: 24px;
     margin-top: 49px;
     margin-left: auto;
+    @include tablet {
+      margin-left: 0;
+    }
     svg path {
       stroke: $font-color;
     }
