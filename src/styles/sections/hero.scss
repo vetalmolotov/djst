@@ -1,0 +1,87 @@
+.workout-hero {
+  width: 100%;
+  max-width: 1200px;
+  padding: 70px 0 190px;
+  position: relative;
+  &-notify {
+    @include flex-v;
+    position: relative;
+    width: 329px;
+    height: 36px;
+    column-gap: 15px;
+    padding: 0 5px;
+    border-radius: 200px;
+    background-color: rgba(255,255,255, 0.1);
+    margin: 0 0 31px;
+    z-index: 2;
+    &__label {
+      @include flex-vh;
+      width: 46px;
+      height: 26px;
+      border-radius: 200px;
+      background: $bg-label;
+      color: $font-color;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    &__text {
+      color: $font-color;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      opacity: 0.800000011920929;
+    }
+  }
+  &-content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 814px;
+    z-index: 2;
+    &__heading {
+      width: 100%;
+      color: $font-color;
+      font-size: 200px;
+      font-weight: 600;
+      line-height: 170px;
+      letter-spacing: -2px;
+      margin: 0 0 42px 0;
+    }
+    &__text {
+      width: 100%;
+      padding: 0 214px 0 0;
+      color: $font-color;
+      font-size: 16px;
+      line-height: 29px;
+      letter-spacing: 0.5px;
+      opacity: 0.5;
+      margin: 0 0 50px 0;
+    }
+    .btn {
+      width: 200px;
+      & + .btn {
+        margin-left: 30px;
+      }
+    }
+  }
+  &-img {
+    width: 514px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+  }
+  &-counters {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    z-index: 2;
+  }
+}

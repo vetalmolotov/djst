@@ -1,0 +1,26 @@
+.counter {
+  width: 166px;
+  height: 96px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: $bg-counter;
+  &__number {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    &--time {
+      color: $counter-text-time;
+    }
+    &--calories {
+      color: $counter-text-calories;
+    }
+  }
+  &__text {
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}

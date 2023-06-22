@@ -14,7 +14,7 @@
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    transition: letter-spacing 500ms;
+    transition: letter-spacing $animation-speed;
     &:hover {
       letter-spacing: 2px
     }

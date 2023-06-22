@@ -1,12 +1,21 @@
 $font-family: 'Poppins', sans-serif;
 $font-size: 18px;
 
+$animation-speed: 500ms;
 
 // text colors
 $font-color: #fff;
+$counter-text: #fff;
+$counter-text-time: #FFE642;
+$counter-text-calories: #FB1351;
 
 // backgrounds colors
 $bg-body: #000;
+
+$bg-label: #25AB75;
+$bg-counter: rgba(255,255,255, 0.1);
+
 $bg-btn-main: rgba(37, 171, 117, 1);
-$bg-btn-main-hover: rgba(37, 171, 117, 0.9);
+$bg-btn-main-hover: rgba(37, 171, 117, 0.8);
 $bg-btn-primary: rgba(255,255,255, 0.1);
+$bg-btn-primary-hover: rgba(255,255,255, 0.2);

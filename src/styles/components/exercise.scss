@@ -3,9 +3,12 @@
   width: 100%;
   min-height: 296px;
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
   &:hover {
     .exercise-img {
       opacity: 0.4;
+      transform: scale(1.1);
     }
     .exercise-info {
       bottom: 10px
@@ -16,7 +19,7 @@
     height: 250px;
     object-fit: contain;
     border-right: 10px;
-    transition: opacity 500ms;
+    transition: opacity $animation-speed, transform $animation-speed;
   }
   &-info {
     position: absolute;
@@ -26,7 +29,7 @@
     left: 20px;
     display: flex;
     flex-direction: column;
-    transition: bottom 500ms;
+    transition: bottom $animation-speed;
     &__title {
       font-style: normal;
       font-weight: 600;

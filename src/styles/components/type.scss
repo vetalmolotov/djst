@@ -3,7 +3,7 @@
   display: flex;
   padding-bottom: 50px;
   border-bottom: 1px solid rgba(255,255,255, 0.4);
-  transition: border-bottom 500ms;
+  transition: border-bottom $animation-speed;
   &:hover {
     border-bottom: 1px solid rgba(255,255,255, 1);
     .type-number {
@@ -23,13 +23,13 @@
     line-height: 35px;
     opacity: 0.34;
     margin-top: 39px;
-    transition: opacity 500ms;
+    transition: opacity $animation-speed;
   }
   &-info {
     display: flex;
     flex-direction: column;
     margin: 0 0 0 290px;
-    transition: margin 500ms;
+    transition: margin $animation-speed;
     &__title {
       @include flex-v;
       height: 70px;
@@ -46,7 +46,7 @@
       line-height: 23px;
       letter-spacing: 0.5px;
       opacity: 0.5;
-      transition: opacity 500ms;
+      transition: opacity $animation-speed;
     }
   }
   .icon-arrow {

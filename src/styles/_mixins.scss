@@ -38,4 +38,5 @@ $mobile-max-width: 900px;
   line-height: 22px;
   letter-spacing: 1px;
   text-decoration: none;
+  transition: background-color $animation-speed, letter-spacing $animation-speed;
 }

@@ -7,14 +7,18 @@
 @import 'variables';
 @import "mixins";
 @import 'scaffolding';
+@import "effects";
+@import "components/buttons";
 
 // sections
 @import "sections/header";
+@import "sections/hero";
 @import "sections/popular";
 @import "sections/program";
 @import "sections/types";
 
 // components
+@import "components/counter";
 @import "components/exercise";
-@import "components/type";
 @import "components/trainer";
+@import "components/type";

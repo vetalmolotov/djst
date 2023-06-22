@@ -1,0 +1,17 @@
+.btn {
+  @include btn;
+  &--main {
+    background-color: $bg-btn-main;
+    &:hover {
+      letter-spacing: 2px;
+      background-color: $bg-btn-main-hover;
+    }
+  }
+  &--primary {
+    background-color: $bg-btn-primary;
+    &:hover {
+      letter-spacing: 2px;
+      background-color: $bg-btn-primary-hover;
+    }
+  }
+}
