@@ -1,21 +1,32 @@
 .workout-program {
+  @include flex-v;
+  flex-direction: column;
   position: relative;
-  width: 100%;
-  max-width: 1200px;
-  padding: 100px 0 150px;
-  &__bg {
+  width: calc(100% + 64px);
+  //max-width: 1200px;
+  padding: 100px 0 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,0.1) 25%);
+  &-bg1 {
     position: absolute;
-    top: 0;
-    right: -120px;
-    width: 999px;
+    top: -100px;
+    left: 32px;
+    width: 321px;
     height: 733px;
-    opacity: 0.10000000149011612;
-    background: #FFF;
+    background: $bg-body;
     z-index: 2;
+  }
+  &-bg2 {
+    @include flex-h;
+    width: 100%;
+    background: $bg-body;
+    padding-bottom: 150px;
   }
   &-info {
     position: relative;
     width: 100%;
+    max-width: 1264px;
+    padding: 0 32px;
     display: flex;
     column-gap: 119px;
     margin-bottom: 153px;
@@ -54,6 +65,9 @@
     }
   }
   &-trainers {
+    width: 100%;
+    max-width: 1264px;
+    padding: 0 32px;
     position: relative;
     display: flex;
     z-index: 4;
