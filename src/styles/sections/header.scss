@@ -14,6 +14,10 @@
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
+    transition: letter-spacing 500ms;
+    &:hover {
+      letter-spacing: 2px
+    }
   }
   &__nav {
     @include flex-v;
