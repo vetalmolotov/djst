@@ -29,7 +29,6 @@ $mobile-max-width: 900px;
 
 @mixin btn {
   @include flex-vh;
-  padding: 0 43px;
   min-height: 70px;
   border-radius: 10px;
   color: $font-color;
