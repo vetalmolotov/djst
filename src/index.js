@@ -10,6 +10,16 @@ const iconArrow = document.querySelectorAll('.icon-arrow')
 for (let i = 0; i < iconArrow.length; ++i) {
   iconArrow[i].innerHTML = iconArrowSVG()
 }
+
+const mobNav = document.querySelector('#nav')
+const opeNavButton = document.querySelector('#navOpen')
+const closeNavButton = document.querySelector('#navClose')
+opeNavButton.addEventListener('click', () => {
+  mobNav.classList.add('open');
+})
+closeNavButton.addEventListener('click', () => {
+  mobNav.classList.remove('open');
+})
 // Test import of an asset
 // import webpackLogo from '@/images/webpack-logo.svg'
 

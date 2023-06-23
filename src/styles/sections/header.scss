@@ -30,6 +30,27 @@
     max-width: 386px;
     @include mobile {
       display: none;
+      opacity: 0;
+      transition: opacity $animation-speed;
+      &.open {
+        @include flex-v;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: auto;
+        padding: 16px 0 0;
+        flex-wrap: wrap;
+        border-bottom: 2px solid $font-color;
+        background: $bg-body;
+        z-index: 6;
+        opacity: 1;
+        & > a {
+          width: 50%;
+          height: 32px;
+          justify-content: center;
+        }
+      }
     }
   }
   &__link {
@@ -42,4 +63,54 @@
     text-transform: uppercase;
     text-decoration: none;
   }
+  .mob-nav-close {
+    display: none;
+    @include mobile {
+      @include flex-vh;
+      position: absolute;
+      bottom: -34px;
+      right: 8px;
+      padding: 0 8px;
+      height: 32px;
+      font-size: 12px;
+      color: $font-color;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border: 2px solid $font-color;
+      border-top: none;
+    }
+  }
+  .mob-nav-open {
+    display: none;
+    @include mobile {
+      display: block;
+      position: relative;
+      width: 22px;
+      color: #000;
+      margin-left: 2px;
+      margin-top: 10px;
+      height: 2px;
+      background: $font-color;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 22px;
+        height: 2px;
+        background-color: $font-color;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 22px;
+        height: 2px;
+        background-color: $font-color;
+      }
+    }
+  }
+
+
 }
