@@ -1,0 +1,80 @@
+.counter__number--calories::after {
+  font: 800 40px system-ui;
+  content: counter(count);
+  animation: counter 1s linear;
+  counter-reset: count 163;
+  counter-increment: count;
+  animation-fill-mode: forwards;
+
+}
+@keyframes counter {
+  0% {
+    counter-increment: count 0;
+  }
+  10% {
+    counter-increment: count 1;
+  }
+  20% {
+    counter-increment: count 2;
+  }
+  30% {
+    counter-increment: count 3;
+  }
+  40% {
+    counter-increment: count 4;
+  }
+  50% {
+    counter-increment: count 5;
+  }
+  60% {
+    counter-increment: count 6;
+  }
+  70% {
+    counter-increment: count 7;
+  }
+  80% {
+    counter-increment: count 8;
+  }
+  90% {
+    counter-increment: count 9;
+  }
+  100% {
+    counter-increment: count 10;
+  }
+}
+
+.counter__number--time span {
+  font: 800 40px system-ui;
+  color: $counter-text-time;
+  animation: color 5s linear infinite alternate;
+
+}
+@keyframes color {
+  0% {
+    color: $counter-text-time;
+  }
+  20% {
+    color: $bg-counter;
+  }
+  30% {
+    color: $counter-text-time;
+  }
+  40% {
+    color: $bg-counter;
+  }
+  50% {
+    color: $counter-text-time;
+  }
+  60% {
+    color: $bg-counter;
+  }
+  70% {
+    color: $counter-text-time;
+  }
+  80% {
+    color: $bg-counter;
+  }
+  100% {
+    color: $counter-text-time;
+  }
+}
