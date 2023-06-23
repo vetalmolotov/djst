@@ -5,4 +5,7 @@
   width: 100%;
   max-width: 1200px;
   padding-bottom: 50px;
+  @include mobile {
+    gap: 32px;
+  }
 }

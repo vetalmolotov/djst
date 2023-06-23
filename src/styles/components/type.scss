@@ -8,6 +8,9 @@
     justify-content: space-between;
     padding-bottom: 40px;
   }
+  @include mobile {
+    padding-bottom: 32px;
+  }
   &:hover {
     border-bottom: 1px solid rgba(255,255,255, 1);
     .type-number {
@@ -38,6 +41,9 @@
     @include tablet {
       margin: 0 0 0 0;
     }
+    @include mobile {
+      margin: 0 0 0 16px;
+    }
     &__title {
       @include flex-v;
       height: 70px;
@@ -48,6 +54,10 @@
       margin-bottom: 10px;
       @include tablet {
         font-size: 32px;
+      }
+      @include mobile {
+        font-size: 32px;
+        line-height: 32px;
       }
     }
     &__counter {
@@ -61,7 +71,7 @@
     }
   }
   .icon-arrow {
-    width: 19px;
+    width: 27px;
     height: 24px;
     margin-top: 49px;
     margin-left: auto;

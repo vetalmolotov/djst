@@ -2,11 +2,23 @@
   width: 100%;
   max-width: 1200px;
   padding-bottom: 200px;
+  @include tablet {
+    padding-bottom: 64px;
+  }
+  @include mobile {
+    padding-bottom: 32px;
+  }
   &-head {
     @include flex-v;
     justify-content: space-between;
     height: 45px;
     margin-bottom: 50px;
+    @include mobile {
+      flex-direction: column;
+      height: auto;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
   }
   &__title {
     @include flex-v;
@@ -14,6 +26,11 @@
     font-weight: 600;
     font-size: 35px;
     letter-spacing: 0.3px;
+    @include mobile {
+      font-size: 31px;
+      line-height: 32px;
+      margin: 0 0 8px;
+    }
   }
   &__button {
     @include flex-v;
@@ -38,6 +55,7 @@
     @include mobile {
       flex-direction: column;
       justify-content: flex-start;
+      row-gap: 8px;
     }
     &__item {
       width: 373px;

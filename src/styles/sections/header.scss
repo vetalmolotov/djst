@@ -28,6 +28,9 @@
     height: 22px;
     width: 100%;
     max-width: 386px;
+    @include mobile {
+      display: none;
+    }
   }
   &__link {
     @include flex-v;

@@ -11,6 +11,9 @@
     background: rgba(255,255,255,0.1);
     padding: 32px 0 0 0;
   }
+  @include mobile {
+    background: none;
+  }
   &-bg1 {
     position: absolute;
     top: -100px;
@@ -48,6 +51,10 @@
       flex-direction: column;
       margin-bottom: 64px;
     }
+    @include mobile {
+      padding: 0;
+      margin-bottom: 32px;
+    }
     &__title {
       position: relative;
       width: 100%;
@@ -59,9 +66,13 @@
       letter-spacing: -2px;
       z-index: 4;
       @include tablet {
-        font-size: 640px;
+        font-size: 64px;
         line-height: 64px;
         max-width: 100%;
+      }
+      @include mobile {
+        font-size: 32px;
+        line-height: 32px;
       }
     }
     &__img {
@@ -82,6 +93,11 @@
         margin-left: 0;
         max-width: 100%;
       }
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       p {
         color: #FFF;
         font-size: 25px;
@@ -90,6 +106,12 @@
         opacity: 0.699999988079071;
         margin-bottom: 50px;
         padding-top: 30px;
+        @include mobile {
+          font-size: 16px;
+          line-height: 24px;
+          padding-top: 16px;
+          margin-bottom: 16px;
+        }
       }
       .btn {
         width: 200px;
@@ -107,10 +129,17 @@
       max-width: 1200px;
       padding: 0;
     }
+    @include mobile {
+      flex-direction: column;
+      row-gap: 16px;
+    }
 
     .trainer {
       @include tablet {
         width: calc(100% / 3);
+      }
+      @include mobile {
+        width: 100%;
       }
       &:nth-child(2) {
         margin-top: 321px;
@@ -126,6 +155,12 @@
           top: 0;
           img {
             height: calc(100% - 64px);
+          }
+        }
+        @include mobile {
+          width: 100%;
+          img {
+            height: auto;
           }
         }
         .trainer__name,
