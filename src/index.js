@@ -20,6 +20,12 @@ opeNavButton.addEventListener('click', () => {
 closeNavButton.addEventListener('click', () => {
   mobNav.classList.remove('open');
 })
+
+const showMoreButton = document.querySelector('#showMore')
+const morePopular = document.querySelector('#popularMore')
+showMoreButton.addEventListener('click', () => {
+  morePopular.classList.add('show');
+})
 // Test import of an asset
 // import webpackLogo from '@/images/webpack-logo.svg'
 
