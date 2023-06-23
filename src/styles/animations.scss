@@ -1,5 +1,4 @@
 .counter__number--calories::after {
-  font: 800 40px system-ui;
   content: counter(count);
   animation: counter 1s linear;
   counter-reset: count 163;
@@ -44,7 +43,6 @@
 }
 
 .counter__number--time span {
-  font: 800 40px system-ui;
   color: $counter-text-time;
   animation: color 5s linear infinite alternate;
 

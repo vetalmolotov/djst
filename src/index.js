@@ -1,5 +1,4 @@
 // Test import of a JavaScript module
-import { example } from '@/js/example'
 import bootstrap from 'bootstrap'
 
 import {iconArrowSVG} from './js/icon-arrow'
